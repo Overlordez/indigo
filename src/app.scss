@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
+
+
+body {
+     background-color: #e5eaf3;
+}
+
+.header {
+     display: flex;
+     justify-content: space-between;
+     position: fixed;
+     font-family: 'Balsamiq Sans', cursive;
+     width: 100%;
+     top: 0%;
+     height: 100px;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     z-index: 9999;
+     background-color: white;
+     align-items: center;
+     -webkit-box-shadow: 0px 3px 15px -4px #000000;
+     box-shadow: 0px 3px 15px -4px #000000;
+
+     .logo {
+          margin-left: 5%;
+
+          h1 {
+               font-weight: bolder;
+               font-size: 55px;
+               margin: 0;
+          }
+     }
+}
+
+
+a {
+     color: white;
+     text-decoration: none;
+
+     &:hover {
+          color: white;
+          text-decoration: none;
+     }
+
+     .call-us {
+          padding: 25px;
+          margin: 20px;
+          font-size: 18px;
+          background-color: palevioletred;
+          border-radius: 40px;
+          text-align: center;
+          color: white;
+          text-decoration: none;
+          margin-left: 0px;
+          transition: .3s;
+
+          &:hover {
+               color: white;
+               background-color: rgb(146, 74, 98);
+               transition: .3s;
+               text-decoration: none;
+          }
+     }
+
+}
+
+
+.welcome {
+     position: relative;
+     background: url("/src/image/welcome_bg.jpg") 50% 50% / cover no-repeat;
+     margin-top: 7%;
+     min-height: calc(100vh - 80px);
+
+     .container {
+          margin-bottom: 5%;
+     }
+}
+
+.col-md-8 {
+     margin-left: 15%;
+
+     h1 {
+          margin-top: 15%;
+          color: white;
+          font-size: 68px;
+     }
+}
+
+
+.lesson {
+     background-color: #e9407a;
+     padding: 15px;
+     margin: 20px;
+     font-size: 18px;
+     border-radius: 40px;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     width: 60%;
+     margin-left: 0px;
+     transition: .3s;
+
+     &:hover {
+          transition: .3s;
+          background-color: #f7a412;
+          color: black;
+     }
+}
+
+.mental {
+     font-family: 'Balsamiq Sans', cursive;
+}
+
+.introduce {
+     background-color: white;
+     padding: 0;
+
+     .club {
+          border-bottom: 1px lightgray solid;
+          padding: 20px;
+          font-family: 'Balsamiq Sans', cursive;
+          text-align: center;
+
+          h2 {
+               color: #e9407a;
+          }
+     }
+
+     .about {
+          margin: 25px;
+          display: flex;
+
+          .col-md-3 {
+               text-align: center;
+
+               p {
+                    margin-top: 5%;
+                    font-size: 20px;
+               }
+          }
+     }
+}
+
+.line {
+     border: 1px solid #f7a412;
+     margin-top: 5%;
+}
+
+.call {
+     background-color: #f7a412;
+     padding: 15px;
+     margin: 20px;
+     font-size: 18px;
+     border-radius: 40px;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+
+     margin-left: 0px;
+     transition: .3s;
+
+     &:hover {
+          transition: .3s;
+          background-color: #e9407a;
+     }
+}
+
+.call2 {
+     background-color: #f7a412;
+     border: 2px solid #f7a412;
+     padding: 15px;
+     margin: 20px;
+     font-size: 18px;
+     border-radius: 40px;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+
+     margin-left: 0px;
+     transition: .3s;
+
+     &:hover {
+          transition: .3s;
+          background-color: #6cb53d;
+          border: 2px solid #6cb53d;
+     }
+}
+
+
+.carousel-item{
+    
+     h5{
+          color: #e9407a;
+     }
+     p{
+          color: #e9407a;
+     }
+}
+
+.carousel-indicators{
+     li{
+          background-color:  #e9407a;
+          height: 5px;
+          border-radius: 40px;
+          
+     }
+}
+
+
+
+.ben{
+     text-align: center;
+     color: #e9407a;
+     font-family: 'Balsamiq Sans', cursive;
+}
+
+.carousel-inner{
+     background: url('/src/image/advantages_bg_img.png');
+     background-attachment: fixed;
+     
+}
+
+
+
+.benefits{
+     margin:  5% 5%;
+     .benefits-item{
+          display: flex;
+          margin-left: 15%;
+          
+          img{
+               padding: 20px 20px;
+               height: 80px;
+          }
+          p{
+               padding: 20px 20px;
+               color: black;
+               font-size: 25px;
+               font-family: 'Roboto'
+          }
+     }
+     .benefits-line{
+          border: 2px solid #f7a412;
+          margin: 20px 20px;
+     }
+}
+
+.carousel-control-prev{
+       background-color: #e9407a;
+       opacity: 1;
+       width: 5%;
+
+}
+
+.carousel-control-next{
+     background-color: #e9407a;
+     opacity: 1;
+     width: 5%;
+}
+
+
+
+
+
+
