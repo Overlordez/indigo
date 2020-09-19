@@ -4,6 +4,7 @@
 
 body {
      background-color: #e5eaf3;
+     min-height: 5000px;
 }
 
 .header {
@@ -25,6 +26,7 @@ body {
 
      .logo {
           margin-left: 5%;
+          height: 80px;
 
           h1 {
                font-weight: bolder;
@@ -149,7 +151,7 @@ a {
 }
 
 .call {
-     background-color: #f7a412;
+     background-color: #e9407a;
      padding: 15px;
      margin: 20px;
      font-size: 18px;
@@ -157,13 +159,17 @@ a {
      text-align: center;
      color: white;
      text-decoration: none;
-
+     box-shadow: 0px 2px 0px 0px rgba(198,54,104,1);
+     text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2);
+ 
      margin-left: 0px;
      transition: .3s;
 
      &:hover {
           transition: .3s;
-          background-color: #e9407a;
+          background-color: #d88e0e;
+          box-shadow: 0px 2px 0px 0px #d88e0e;
+          text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2);
      }
 }
 
@@ -177,7 +183,8 @@ a {
      text-align: center;
      color: white;
      text-decoration: none;
-
+     -webkit-box-shadow: 0px 2px 0px 0px #db900f; 
+     box-shadow: 0px 2px 0px 0px #db900f;
      margin-left: 0px;
      transition: .3s;
 
@@ -185,6 +192,8 @@ a {
           transition: .3s;
           background-color: #6cb53d;
           border: 2px solid #6cb53d;
+          -webkit-box-shadow: 0px 2px 0px 0px #589632; 
+          box-shadow: 0px 2px 0px 0px #589632;
      }
 }
 
@@ -219,6 +228,7 @@ a {
 .carousel-inner{
      background: url('/src/image/advantages_bg_img.png');
      background-attachment: fixed;
+     height: 70vh;
      
 }
 
@@ -260,8 +270,140 @@ a {
      width: 5%;
 }
 
+.test__video {
+     min-height: 800px;
+   }
 
 
+.question{
+     .row{
+          padding: 20px;
+         .q-a{
+           align-items: center;
+         }
+          .col-md-4{
+               color:rgb(233, 64, 123); 
+               font-weight: 900; 
+               font-size: 25px;
+               margin-top: 5%;
+          }
+          .col-md-6{
+               font-weight: 500;
+                  font-size: 15px;
+                  margin-left: 5%;
+                  margin-top: 5%;
+          }
+          
+          .title{
+               border-bottom: 1px solid gray;
+               padding: 20px;
+               h1{
+                    margin-left: 5%;
+               }
+          }
+     }
+   margin-top: 5%;
+      .q-a{
+           background-color: white;
+      }
+}
 
+.video-play {
+     width: 100%;
+     margin: 50px auto;
+     text-align: center;
+   }
+   
+   .video-play img {
+     max-width: 100%;
+   }
+   
+   .outer {
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.9);
+     z-index: 999999999999;
+   }
+   
+   .outer iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+   }
+   
+   .outer::before {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     width: 20px;
+     height: 2px;
+     content: '';
+     transform: rotate(45deg);
+     background-color: #fff;
+     z-index: 5;
+   }
+   
+   .outer::after {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     width: 20px;
+     height: 2px;
+     content: '';
+     transform: rotate(-45deg);
+     background-color: #fff;
+     z-index: 5;
+   }
+
+   .play{
+     animation: pulse 1.5s infinite;
+     border-radius: 60px;
+     transform: translate(0%, -450px);
+   }
+
+   @-webkit-keyframes pulse {
+     0% {
+          // transform: scale(0.95);
+       -webkit-box-shadow: 0 0 0 0 rgba(233, 64, 123, 0.4);
+     }
+     70% {
+          // transform: scale(1);
+         -webkit-box-shadow: 0 0 0 30px rgba(233, 64, 123, 0);
+     }
+     100% {
+          // transform: scale(0.95);
+         -webkit-box-shadow: 0 0 0 0 rgba(233, 64, 123, 0);
+     }
+   }
+   @keyframes pulse {
+     0% {
+          // transform: scale(0.95);
+       -moz-box-shadow: 0 0 0 0 rgba(233, 64, 123, 0.4);
+       box-shadow: 0 0 0 0 rgba(233, 64, 123, 0.4);
+     }
+     70% {
+          // transform: scale(1);
+         -moz-box-shadow: 0 0 0 30px rgba(233, 64, 123, 0);
+         box-shadow: 0 0 0 30px rgba(233, 64, 123, 0);
+     }
+     100% {
+          // transform: scale(0.95);
+         -moz-box-shadow: 0 0 0 0 rgba(233, 64, 123, 0);
+         box-shadow: 0 0 0 0 rgba(233, 64, 123, 0);
+     }
+   }
+
+
+@media(max-width: 1500px){
+     .carousel-inner{
+          height: 90vh;
+     }
+}
 
 
