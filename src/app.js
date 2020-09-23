@@ -1,3 +1,5 @@
+
+// ** Видео You-Tube ** //
 $('[data-youtube]').on('click', function () {
      let id = $(this).data('youtube'),
          padding = $(window).innerWidth() > 768 ? 120 : 30,
@@ -24,6 +26,8 @@ $('[data-youtube]').on('click', function () {
      }
  });
 
+
+ // ** слайдер** //
  'use strict';
  var multiItemSlider = (function () {
 
@@ -265,4 +269,31 @@ $('[data-youtube]').on('click', function () {
    isCycling: true
  })
 
+
+  // ** Мягкий скролинг ** //
+ $(document).bind( 'mousewheel', function (e) { 
+  var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*100); 
+  e.preventDefault(); 
+  e.stopPropagation(); 
+  $(document.body).stop().animate( { 
+       scrollTop : nt 
+   } , 500 , 'easeInOutCubic' );  
+} )
+
+
+// ** Мягкий скролинг к якорю ** //
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
  

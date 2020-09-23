@@ -17,7 +17,7 @@
           <div class="logo">
                <img src="/src/image/logo-indigo.png" alt="">
           </div>
-          <a href="">
+          <a href="#contact-form">
                <div class="call-us"> ПОЗВОНИТЕ НАМ! </div>
           </a>
      </div>
@@ -33,7 +33,7 @@
                               КЛЮЧ К УСПЕХУ <br>
                               <span style="color:#d3dc5d">ВАШЕГО РЕБЕНКА</span>
                          </h1>
-                         <a href="">
+                         <a href="#contact-form">
                               <div class="lesson"> ЗАПИСАТЬ РЕБЕНКА НА ПРОБНЫЙ УРОК </div>
                          </a>
                     </div>
@@ -74,7 +74,7 @@
                          </div>
 
                          <div style="display:flex; justify-content:center">
-                              <a href="">
+                              <a href="#contact-form">
                                    <div class="call"> ПОЛУЧИТЬ ЗВОНОК ЭКСПЕРТА</div>
                               </a>
                          </div>
@@ -183,14 +183,14 @@
                </a>
           </div>
           <div style="display:flex; justify-content:center">
-               <a href="">
+               <a href="#contact-form">
                     <div class="call2"> СТАТЬ ПАРТНЁРОМ (ФРАНШИЗА) </div>
                </a>
           </div>
      </section>
 
      <div class="col-md-12 video " style=" position:relative;">
-          <h1 style="font-family: 'Balsamiq Sans'; font-size: 60px;"> <span style="color:#e9407a"> ВИДЕО </span> 
+          <h1 style="font-family: 'Balsamiq Sans';"> <span style="color:#e9407a"> ВИДЕО </span> 
                <span style="color:#494da2"> НАШИХ ЗАНЯТИЙ </span> </h1>
 
           <div class="video-play" data-youtube="https://www.youtube.com/embed/V6QI-FLMt2Q">
@@ -253,7 +253,7 @@
                </div>
           </div>
           <div style="display:flex; justify-content:center">
-               <a href="">
+               <a href="#contact-form">
                     <div class="call"> ПРИСОЕДИНЯЙСЯ </div>
                </a>
           </div>
@@ -368,7 +368,7 @@
      <div class="slider">
                <h1 style="font-family: 'Balsamiq Sans', cursive; font-weight: 900; text-align: center;"> <span
                     style="color:#494da2">
-                    УСПЕХИ НАШИХ </span> <span style="color:#e9407a"> УЧЕНИКОВ</span>
+                    ОТЗЫВЫ </span> 
           </h1>
           <div class="slider__wrapper">
             <div class="slider__item">
@@ -408,10 +408,7 @@
 
 
         <section class="contactUS">
-               <div class="container">
-
-                         
-                    
+               <div class="container" id="contact-form">
                          <div class="wrapper">
                     
                               <!-- COMPANY INFORMATION -->
@@ -423,28 +420,28 @@
                               <!-- End .company-info -->
                     
                               <!-- CONTACT FORM -->
-                              <div class="contact">
+                              <div class="contact" >
                                    <h3>ОБРАТНЫЙ ЗВОНОК
 
                                         </h3>
                     
-                                   <form id="contact-form">
+                                   <form id="contact-form" action="mail-send.php" method="post">
                     
                                         <p>
                                              <!-- <label>Имя</label> -->
-                                             <input type="text" name="name" placeholder="Имя*" id="name" required>
+                                             <input type="text" required name="name" placeholder="Имя*" id="name" required>
                                         </p>
                     
                                       
                     
                                         <p>
                                              <!-- <label>E-mail Адрес</label> -->
-                                             <input type="text" name="email" placeholder=" E-mail Адрес* "  id="email" required>
+                                             <input type="text" required name="email" placeholder=" E-mail Адрес* "  id="email" required>
                                         </p>
                     
                                         <p>
                                              <!-- <label>Номер телефона</label> -->
-                                             <input type="text" name="phone" placeholder="Номер телефона*" id="phone">
+                                             <input type="text" required name="phone" placeholder="Номер телефона*" id="phone">
                                         </p>
                     
                                         <p class="full" style="border:none;">
