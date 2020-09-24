@@ -448,6 +448,7 @@ a {
 .result {
      background-color: white;
      margin-top: 5%;
+     
      .result__padding {
           padding-top: 100px;
 
@@ -506,6 +507,7 @@ a {
 
 .proofs{
      margin-top: 5%;
+     
      .row{
           justify-content: space-evenly;
           .proofs-item{
@@ -516,6 +518,10 @@ a {
                }
           }
      }
+}
+
+h1{
+     margin-bottom: 5%;
 }
 
 .home-reviews-slider {
@@ -637,6 +643,11 @@ a {
       background-color: #fff;
  }
 
+ .brain{
+     background: url('/src/image/features_bg.png') 50% 50% / cover no-repeat;
+     }
+     
+ 
 
  .container {
      max-width: 1170px;
@@ -768,12 +779,16 @@ a {
      transition: background-color 2s ease-out;
    }
 
+   
+
 
 footer{
      color: white;
      background-color: #e9407a;
      padding: 80px;
      text-align: center;
+     
+     
 }
 
    

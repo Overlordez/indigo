@@ -281,19 +281,19 @@ $('[data-youtube]').on('click', function () {
 } )
 
 
-// ** Мягкий скролинг к якорю ** //
-const anchors = document.querySelectorAll('a[href*="#"]')
+// // ** Мягкий скролинг к якорю ** //
+// const anchors = document.querySelectorAll('a[href*="#contact-form"]')
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault()
     
-    const blockID = anchor.getAttribute('href').substr(1)
+//     const blockID = anchor.getAttribute('href').substr(1)
     
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
+//     document.getElementById(blockID).scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start'
+//     })
+//   })
+// }
  
