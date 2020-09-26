@@ -74,7 +74,7 @@ a {
 .welcome {
      position: relative;
      background: url("/src/image/welcome_bg.jpg") 50% 50% / cover no-repeat;
-     margin-top: 7%;
+     margin-top: 4%;
      min-height: calc(100vh - 80px);
 
      .container {
@@ -886,6 +886,30 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 
+.map-block{
+     background: url('/src/image/map3.png') 50% 50% / cover no-repeat;
+     padding: 100px;
+     background-attachment: fixed;
+     .map-block-h1{
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid  #f7a412;
+     }
+     .adress{
+          color: white;
+          text-align: center;
+          
+          h2{
+               margin: 40px 0px;
+               transition: .3s;
+               &:hover{
+                    color: #d3dc5d;
+               }
+          }
+       
+     }
+}
+
 
 
 footer {
@@ -893,8 +917,7 @@ footer {
      background-color: #e9407a;
      padding: 80px;
      text-align: center;
-
-
+    
 }
 
 
@@ -1012,6 +1035,11 @@ footer {
           transform: translate(0%, -230px);
           height: 80px;
      }
+
+     .map-block{
+          padding: 1px;
+          
+     }
 }
 
 
@@ -1041,6 +1069,8 @@ footer {
      }
 
      }
+
+     
     
 
 
